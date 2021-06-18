@@ -143,7 +143,7 @@ If you use this work in academic research, please, cite it using the following B
 @INPROCEEDINGS{gflamis2021,
 author={Georgios Flamis, Stavros Kalapothas, Paris Kitsos},
 booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)}, 
-title={Workflow on CNN utilization and inference inFPGA for embedded applications}, 
+title={Workflow on CNN utilization and inference in FPGA for embedded applications}, 
 year={2021},
 volume={},
 number={},
