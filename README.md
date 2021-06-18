@@ -17,11 +17,8 @@ Table of Contents
   * [Installation](#Installation)
   	* [ZedBoard SD card configuration for DNNDK](#zedboard-sd-card-configuration-for-dnndk)
 	* [Host configuration for DNNDK setup and inference kernel generation](#host-configuration-for-dnndk-setup-and-inference-kernel-generation)
-
-  * [Installation](#installation)
-        * [OR using Pathogen:](#or-using-pathogen)
-        * [OR using Vundle:](#or-using-vundle)
-        * [License](#license)
+	* [Application build and run inference on the ZedBoard](#application-build-and-run-inference-on-the-zedboard)
+  * [Citation](#citation)
 
 # Installation
 In the following steps we describe the process to setup the development enviroment.
@@ -143,24 +140,15 @@ John Doe
 If you use this work in academic research, please, cite it using the following BibTeX:
 
 ```latex
-	@misc{flamis2021,
-	author = {Georgios Flamis, Stavros Kalapothas, Paris Kitsos},
-	title = {tffm: ZedBoard SDcard configuration for DNNDK},
-	year = {2021},
-	publisher = {GitHub},
-	journal = {GitHub repository},
-	howpublished = {\url{https://github.com/ECSALAb/cnnzed}},
-	}
-
 @INPROCEEDINGS{gflamis2021,
 author={Georgios Flamis, Stavros Kalapothas, Paris Kitsos},
 booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)}, 
-title={Accuracy Evaluation of SLAM Algorithms in RGB-D Sensors}, 
-year={2020},
+title={Workflow on CNN utilization and inference inFPGA for embedded applications}, 
+year={2021},
 volume={},
 number={},
-pages={1-6},
-doi={10.1109/SEEDA-CECNSM49515.2020.9221784}}
+pages={1-5},
+doi={xx.xxxx/SEEDA-CECNSMxxxxx.2021.xxxxxxx}}
 ```
 
 ###### tags: `fpga` `dnndk` `zedboard`
