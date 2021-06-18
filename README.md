@@ -9,10 +9,19 @@ disqus: hackmd
 Convolutional Neural Network Utilization and Inference in ZedBoard for Embedded Aplications
 ===
 ![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ecsa-lab)](https://github.com/anuraghazra/github-readme-stats)
 
-## Table of Contents
+### Table of Contents
 
-[TOC]
+Table of Contents
+=================
+
+  * [Dockerfile.vim](#dockerfilevim)
+  * [Screenshot](#screenshot)
+  * [Installation](#installation)
+        * [OR using Pathogen:](#or-using-pathogen)
+        * [OR using Vundle:](#or-using-vundle)
+        * [License](#license)
 
 # Installation
 In the following steps we describe the process to setup the development enviroment.
