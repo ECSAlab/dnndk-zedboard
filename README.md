@@ -1,8 +1,9 @@
 # dnndk-zedboard
-Workflow on CNN utilization and inference in FPGA for embedded applications
-
-Paper: "Convolutional Neural Network Utilization and Inference in ZedBoard for Embedded Aplications"
+This repo is part of the work published in a paper accepted for presentation at the SEEDA-CECNSM 2021
 ===
+ 
+
+# Paper: "Workflow on CNN utilization and inference inFPGA for embedded applications"
 ![](https://img.shields.io/github/last-commit/ecsalab/seed-fpga?style=plastic)
 
 Table of Contents
