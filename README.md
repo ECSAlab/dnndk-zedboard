@@ -16,7 +16,7 @@ Convolutional Neural Network Utilization and Inference in ZedBoard for Embedded 
 Table of Contents
 =================
 
-  * [Dockerfile.vim](#dockerfilevim)
+  * [Installation](#Installation)
   * [Screenshot](#screenshot)
   * [Installation](#installation)
         * [OR using Pathogen:](#or-using-pathogen)
