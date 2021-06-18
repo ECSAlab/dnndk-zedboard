@@ -28,8 +28,13 @@ In the following steps we describe the process to setup the development envirome
 Follow the steps below to setup the FPGA board:
 
 1. Our work is based on ZedBoard which is a complete development kit for designers interested in exploring designs using the Xilinx Zynq®-7000 SoC (read more specs: http://zedboard.org/product/zedboard).
-![](https://i.imgur.com/TPmQRCm.jpg)
-2. Verify the ZedBoard boot (JP7-JP11) and MIO0 (JP6) jumpers are set to SD card mode (as described in the Hardware Users Guide https://www.zedboard.org/documentation/1521). Jumpers should be in the following position. ![](https://i.imgur.com/VTboA8m.jpg)
+
+![](https://i.imgur.com/TPmQRCm.jpg | width=150)
+
+2. Verify the ZedBoard boot (JP7-JP11) and MIO0 (JP6) jumpers are set to SD card mode (as described in the Hardware Users Guide https://www.zedboard.org/documentation/1521). Jumpers should be in the following position. 
+
+![](https://i.imgur.com/VTboA8m.jpg)
+
 3. Download the Xilinx DNNDK image file compatible for ZedBoard
 https://www.xilinx.com/member/forms/download/design-license-xef.html?filename=xilinx-zedboard-dnndk3.1-image-20190812.zip.
 4. Extract the image from the zip file and burn it on an SD card (8GB or higher is needed) using etcher https://www.balena.io/etcher/.
