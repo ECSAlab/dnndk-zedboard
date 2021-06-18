@@ -9,15 +9,15 @@ disqus: hackmd
 Convolutional Neural Network Utilization and Inference in ZedBoard for Embedded Aplications
 ===
 ![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg)
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ecsa-lab)](https://github.com/anuraghazra/github-readme-stats)
-
-### Table of Contents
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ecsalab)](https://github.com/anuraghazra/github-readme-stats)
 
 Table of Contents
 =================
 
   * [Installation](#Installation)
-  * [Screenshot](#screenshot)
+  	* [ZedBoard SD card configuration for DNNDK](#zedboard-sd-card-configuration-for-dnndk)
+	* [Host configuration for DNNDK setup and inference kernel generation](#host-configuration-for-dnndk-setup-and-inference-kernel-generation)
+
   * [Installation](#installation)
         * [OR using Pathogen:](#or-using-pathogen)
         * [OR using Vundle:](#or-using-vundle)
@@ -76,9 +76,9 @@ $ python eval_graph.py \
 
 The expected result is
  Top 1 accuracy with validation set: 0.9902
-  Top 5 accuracy with validation set: 0.9999
+ Top 5 accuracy with validation set: 0.9999
 
-  The DECENT tool of DNNDK should be used next to generate the quantized model. The following command will enable this process:
+The DECENT tool of DNNDK should be used next to generate the quantized model. The following command will enable this process:
 
   ```shell=
   $ decent_q quantize \
@@ -90,7 +90,7 @@ The expected result is
   --output_dir _quant
   ```
 
-  The process may take some time to finish. Once quantization is completed, summary will be displayed, like the one below:
+The process may take some time to finish. Once quantization is completed, summary will be displayed, like the one below:
 
   ```console=
   INFO: Checking Float Graph...
@@ -102,11 +102,11 @@ The expected result is
   INFO: Deploy Model Generated.
   *********** Quantization Summary **************      
   INFO: Output:       
-    quantize_eval_model:      quantize_eval_model.pb       
-      deploy_model:                    deploy_model.pb
-      ```  
+    quantize_eval_model:      quantize_eval_model.pb
+    deploy_model:                    deploy_model.pb
+  ```  
 
-      At this point, it is suggested to validate the accuracy of the quantized model  using the command:
+At this point, it is suggested to validate the accuracy of the quantized model  using the command:
 
       ```shell=
       $ python eval_graph.py \
@@ -115,11 +115,11 @@ The expected result is
       --output_node dense_1/BiasAdd
       ```
 
-      And the expected results should be
-       Top 1 accuracy with validation set: 0.9904
-        Top 5 accuracy with validation set: 0.9999
+And the expected results should be
+ Top 1 accuracy with validation set: 0.9904
+ Top 5 accuracy with validation set: 0.9999
 
-	The DNNC tool from DNNDK is used to deploy the inference kernel for the ZedBoard. The following command is used:
+The DNNC tool from DNNDK is used to deploy the inference kernel for the ZedBoard. The following command is used:
 
 	```shell=
 	dnnc-dpu1.4.0 \
@@ -132,15 +132,15 @@ The expected result is
 	--save_kernel \
 	--mode=normal
 	```
+For simplicity, the Zedboard.dcf file is provided. Alternatively, it can be generated with the DLet tool from DNNDK, using the hardware hand-off (.hwh) file from the vivado project.
 
-	For simplicity, the Zedboard.dcf file is provided. Alternatively, it can be generated with the DLet tool from DNNDK, using the hardware hand-off (.hwh) file from the vivado project.
-	The generated inference kernel will be stored in "_deploy" folder in .elf file.
+The generated inference kernel will be stored in "_deploy" folder in .elf file.
 
-	## Application build and run inference on the ZedBoard
-	John Doe
+## Application build and run inference on the ZedBoard
+John Doe
 
-	# Citation
-	If you use this work in academic research, please, cite it using the following BibTeX:
+# Citation
+If you use this work in academic research, please, cite it using the following BibTeX:
 	```latex
 	@misc{flamis2021,
 	author = {Georgios Flamis, Stavros Kalapothas, Paris Kitsos},
@@ -151,6 +151,4 @@ The expected result is
 	howpublished = {\url{https://github.com/ECSALAb/cnnzed}},
 	}
 	```
-
-	###### tags: `fpga` `dnndk` `zedboard`
-
+###### tags: `fpga` `dnndk` `zedboard`
