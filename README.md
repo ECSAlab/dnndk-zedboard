@@ -1,6 +1,5 @@
 # dnndk-zedboard
 This repo is part of the work published in a paper accepted for presentation at the SEEDA-CECNSM 2021
-===
  
 
 # Paper: "Workflow on CNN utilization and inference inFPGA for embedded applications"
