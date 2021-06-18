@@ -9,7 +9,7 @@ disqus: hackmd
 Convolutional Neural Network Utilization and Inference in ZedBoard for Embedded Aplications
 ===
 ![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg)
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ecsalab)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ECSAlab)](https://github.com/anuraghazra/github-readme-stats)
 
 Table of Contents
 =================
@@ -82,40 +82,40 @@ The expected result is
 
 The DECENT tool of DNNDK should be used next to generate the quantized model. The following command will enable this process:
 
-  ```shell=
-  $ decent_q quantize \
-  --input_frozen_graph ./freeze/frozen_graph.pb \
-  --input_nodes images_in \
-  --output_nodes dense_1/BiasAdd \
-  --input_shapes ?,28,28,1 \
-  --input_fn graph_input_fn.calib_input \
-  --output_dir _quant
-  ```
+```shell=
+$ decent_q quantize \
+--input_frozen_graph ./freeze/frozen_graph.pb \
+--input_nodes images_in \
+--output_nodes dense_1/BiasAdd \
+--input_shapes ?,28,28,1 \
+--input_fn graph_input_fn.calib_input \
+--output_dir _quant
+```
 
 The process may take some time to finish. Once quantization is completed, summary will be displayed, like the one below:
 
-  ```console=
-  INFO: Checking Float Graph...
-  INFO: Float Graph Check Done.
-  INFO: Calibrating for 100 iterations...
-  100% (100 of 100) |############| Elapsed Time: 0:00:13 Time:  0:00:13
-  INFO: Calibration Done.
-  INFO: Generating Deploy Model...
-  INFO: Deploy Model Generated.
-  *********** Quantization Summary **************      
-  INFO: Output:       
-    quantize_eval_model:      quantize_eval_model.pb
-    deploy_model:                    deploy_model.pb
-  ```  
+```console=
+INFO: Checking Float Graph...
+INFO: Float Graph Check Done.
+INFO: Calibrating for 100 iterations...
+100% (100 of 100) |############| Elapsed Time: 0:00:13 Time:  0:00:13
+INFO: Calibration Done.
+INFO: Generating Deploy Model...
+INFO: Deploy Model Generated.
+*********** Quantization Summary **************      
+INFO: Output:       
+  quantize_eval_model:      quantize_eval_model.pb
+  deploy_model:                    deploy_model.pb
+```  
 
 At this point, it is suggested to validate the accuracy of the quantized model  using the command:
 
-      ```shell=
-      $ python eval_graph.py \
-      --graph ./_quant/quantize_eval_model.pb \
-      --input_node images_in \
-      --output_node dense_1/BiasAdd
-      ```
+```shell=
+$ python eval_graph.py \
+--graph ./_quant/quantize_eval_model.pb \
+--input_node images_in \
+--output_node dense_1/BiasAdd
+```
 
 And the expected results should be
  Top 1 accuracy with validation set: 0.9904
@@ -123,17 +123,18 @@ And the expected results should be
 
 The DNNC tool from DNNDK is used to deploy the inference kernel for the ZedBoard. The following command is used:
 
-	```shell=
-	dnnc-dpu1.4.0 \
-	--parser=tensorflow \
-	--frozen_pb=_quant/deploy_model.pb \
-	--dcf=zedboard.dcf \
-	--cpu_arch=arm32 \
-	--output_dir=_deploy \
-	--net_name=mnist \
-	--save_kernel \
-	--mode=normal
-	```
+```shell=
+dnnc-dpu1.4.0 \
+--parser=tensorflow \
+--frozen_pb=_quant/deploy_model.pb \
+--dcf=zedboard.dcf \
+--cpu_arch=arm32 \
+--output_dir=_deploy \
+--net_name=mnist \
+--save_kernel \
+--mode=normal
+```
+
 For simplicity, the Zedboard.dcf file is provided. Alternatively, it can be generated with the DLet tool from DNNDK, using the hardware hand-off (.hwh) file from the vivado project.
 
 The generated inference kernel will be stored in "_deploy" folder in .elf file.
