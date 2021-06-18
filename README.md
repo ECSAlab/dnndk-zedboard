@@ -23,7 +23,7 @@ Follow the steps below to setup the FPGA board:
 
 1. Our work is based on ZedBoard which is a complete development kit for designers interested in exploring designs using the Xilinx Zynq®-7000 SoC (read more specs: http://zedboard.org/product/zedboard ).
 
-<img src="https://i.imgur.com/TPmQRCm.jpg" widht=25% height=25%>
+<img src="https://i.imgur.com/TPmQRCm.jpg" widht=5% height=5%>
 
 2. Verify the ZedBoard boot (JP7-JP11) and MIO0 (JP6) jumpers are set to SD card mode (as described in the Hardware Users Guide https://www.zedboard.org/documentation/1521). Jumpers should be in the following position. 
 
