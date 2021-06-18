@@ -141,7 +141,8 @@ John Doe
 
 # Citation
 If you use this work in academic research, please, cite it using the following BibTeX:
-	```latex
+
+```latex
 	@misc{flamis2021,
 	author = {Georgios Flamis, Stavros Kalapothas, Paris Kitsos},
 	title = {tffm: ZedBoard SDcard configuration for DNNDK},
@@ -150,5 +151,16 @@ If you use this work in academic research, please, cite it using the following B
 	journal = {GitHub repository},
 	howpublished = {\url{https://github.com/ECSALAb/cnnzed}},
 	}
-	```
+
+@INPROCEEDINGS{gflamis2021,
+author={Georgios Flamis, Stavros Kalapothas, Paris Kitsos},
+booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)}, 
+title={Accuracy Evaluation of SLAM Algorithms in RGB-D Sensors}, 
+year={2020},
+volume={},
+number={},
+pages={1-6},
+doi={10.1109/SEEDA-CECNSM49515.2020.9221784}}
+```
+
 ###### tags: `fpga` `dnndk` `zedboard`
