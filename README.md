@@ -3,7 +3,8 @@ This repo is part of the work published in a paper accepted for presentation at 
  
 # Paper: "Workflow on CNN utilization and inference in FPGA for embedded applications"
 
-### If you use our work, please cite it using these metadata:
+# Citation
+If you use this work in academic research, please, cite it using the following BibTeX:
 ```
 @INPROCEEDINGS{xxxxxx,
   author={Flamis, Georgios and Kalapothas, Stavros and Kitsos, Paris},
@@ -149,20 +150,5 @@ The generated inference kernel will be stored in "_deploy" folder in .elf file.
 
 ## Application build and run inference on the ZedBoard
 John Doe
-
-# Citation
-If you use this work in academic research, please, cite it using the following BibTeX:
-```
-@INPROCEEDINGS{xxxxxx,
-  author={Flamis, Georgios and Kalapothas, Stavros and Kitsos, Paris},
-  booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)},
-  title={Workflow on CNN utilization and inference in FPGA for embedded applications},
-  year={2021},
-  volume={},
-  number={},
-  pages={1-6},
-  doi={xx.xxxx/SEEDA-CECNSMxxxx.2021.xxxxxx}
-}
-```
 
 ###### tags: `fpga` `dnndk` `zedboard`
