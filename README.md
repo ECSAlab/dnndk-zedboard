@@ -1,8 +1,20 @@
 # dnndk-zedboard
-This repo is part of the work published in a paper accepted for presentation at the SEEDA-CECNSM 2021
+This repo is part of the work published in a paper accepted for presentation at the [6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM 2021), Preveza, Greece, September 24th-26th 2021.](https://seeda2021.uowm.gr/)
  
-
 # Paper: "Workflow on CNN utilization and inference in FPGA for embedded applications"
+
+### If you use our work, please cite it using these metadata:
+@INPROCEEDINGS{xxxxxx,
+  author={Flamis, Georgios and Kalapothas, Stavros and Kitsos, Paris},
+  booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)},
+  title={Workflow on CNN utilization and inference in FPGA for embedded applications}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={xx.xxxx/SEEDA-CECNSMxxxx.2021.xxxxxx}
+}
+
 ![](https://img.shields.io/github/last-commit/ecsalab/seed-fpga?style=plastic)
 
 Table of Contents
