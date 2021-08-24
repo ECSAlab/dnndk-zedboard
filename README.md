@@ -4,6 +4,7 @@ This repo is part of the work published in a paper accepted for presentation at 
 # Paper: "Workflow on CNN utilization and inference in FPGA for embedded applications"
 
 ### If you use our work, please cite it using these metadata:
+```
 @INPROCEEDINGS{xxxxxx,
   author={Flamis, Georgios and Kalapothas, Stavros and Kitsos, Paris},
   booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)},
@@ -14,6 +15,7 @@ This repo is part of the work published in a paper accepted for presentation at 
   pages={1-6},
   doi={xx.xxxx/SEEDA-CECNSMxxxx.2021.xxxxxx}
 }
+```
 
 ![](https://img.shields.io/github/last-commit/ecsalab/seed-fpga?style=plastic)
 
