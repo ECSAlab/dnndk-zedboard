@@ -17,7 +17,7 @@ This repo is part of the work published in a paper accepted for presentation at 
 }
 ```
 
-![](https://img.shields.io/github/last-commit/ecsalab/dnndk-zedboard?style=plastic)
+![](https://img.shields.io/github/last-commit/ECSAlab/dnndk-zedboard?style=plastic)
 
 Table of Contents
 =================
