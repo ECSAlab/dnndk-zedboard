@@ -152,17 +152,17 @@ John Doe
 
 # Citation
 If you use this work in academic research, please, cite it using the following BibTeX:
-
-```latex
-@INPROCEEDINGS{gflamis2021,
-author={Georgios Flamis, Stavros Kalapothas, Paris Kitsos},
-booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)}, 
-title={Workflow on CNN utilization and inference in FPGA for embedded applications}, 
-year={2021},
-volume={},
-number={},
-pages={1-5},
-doi={xx.xxxx/SEEDA-CECNSMxxxxx.2021.xxxxxxx}}
+```
+@INPROCEEDINGS{xxxxxx,
+  author={Flamis, Georgios and Kalapothas, Stavros and Kitsos, Paris},
+  booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)},
+  title={Workflow on CNN utilization and inference in FPGA for embedded applications},
+  year={2021},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={xx.xxxx/SEEDA-CECNSMxxxx.2021.xxxxxx}
+}
 ```
 
 ###### tags: `fpga` `dnndk` `zedboard`
