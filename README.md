@@ -152,8 +152,8 @@ The generated inference kernel will be stored in "_deploy" folder in .elf file.
 
 Transfer to Zedboard the contents of the folder "mnist_zedboard_inference" via FTP.
 
-Step 1: Install the application via "install.sh"
-Step 2: Build the model using the Makefile in samples/mnist
-Step 3: Run the produced executable to collect the result as mentioned to the paper
+Step 1: Install the application via "install.sh"\
+Step 2: Build the model using the Makefile in samples/mnist\
+Step 3: Run the produced executable to collect the result as mentioned to the paper\
 
 ###### tags: `fpga` `dnndk` `zedboard`
