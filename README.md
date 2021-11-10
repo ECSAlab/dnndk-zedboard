@@ -6,15 +6,15 @@ This repo is part of the work published in a paper accepted for presentation at 
 # Citation
 If you use this work in academic research, please, cite it using the following BibTeX:
 ```
-@INPROCEEDINGS{xxxxxx,
+@INPROCEEDINGS{9566259,
   author={Flamis, Georgios and Kalapothas, Stavros and Kitsos, Paris},
   booktitle={2021 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)},
-  title={Workflow on CNN utilization and inference in FPGA for embedded applications}, 
+  title={Workflow on CNN utilization and inference in FPGA for embedded applications: 6th South-East Europe Design Automation, Computer Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM 2021)},
   year={2021},
   volume={},
   number={},
   pages={1-6},
-  doi={xx.xxxx/SEEDA-CECNSMxxxx.2021.xxxxxx}
+  doi={10.1109/SEEDA-CECNSM53056.2021.9566259}
 }
 ```
 
